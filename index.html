@@ -12,17 +12,14 @@
       rel="stylesheet"
     />
 
-
-   <link rel="stylesheet" href="./scss/utils/_modern-normalize.scss" />
- 
-
+    <link rel="stylesheet" href="./scss/utils/_modern-normalize.scss" />
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!-- Шапка -->
-    <header class="header">
+    <!--<header class="header">
       <div class="container container-header">
         <nav class="nav">
           <a class="nav__logo" href="./index.html"><span class="accent">Web</span>Studio</a>
@@ -64,15 +61,15 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header>-->
 
-    <main class="main ">
-      <section class="hero section">
+    <main class="main">
+      <!--<section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__btns" type="button" data-modal-open >Замовити послугу</button>
         </div>
-      </section>
+      </section>-->
 
       <!-- Блок про нас -->
 
@@ -130,7 +127,7 @@
 
       <!-- Блок чим ми займаймось-->
 
-      <section class="work section">
+      <!--<section class="work section">
         <div class="container">
           <h2 class="title-hero">Чим ми займаємося</h2>
           <ul class="work__list">
@@ -178,11 +175,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Блок наша команда -->
 
-      <section class="team section">
+      <!--<section class="team section">
         <div class="container">
           <h2 class="title-hero">Наша команда</h2>
           <ul class="team__list">
@@ -448,11 +445,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Постійні клієнти-->
 
-      <section class=" cliens section">
+      <!--<section class="cliens section">
         <div class="container">
           <h2 class="title-hero">Постійні клієнти</h2>
           <ul class="cliens__list">
@@ -500,13 +497,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
 
     <!-- Footer-->
 
-
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container foot-wrap">
         <div class="contact">
         <a class="contact__logo" href="./index.html"><span class="accent">Web</span>Studio</a>
@@ -599,61 +595,69 @@
           
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!--model-->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" type=" button" data-modal-close>
-          <svg width="18" height="18" >
+          <svg width="18" height="18">
             <use href="./images/icons.svg#close-btn"></use>
           </svg>
         </button>
-      
+
         <form class="register" name="register-form">
           <strong class="register__title">Залиште свої дані, ми вам передзвонимо</strong>
-          
-          <div class="register__group"  role="group">
+
+          <div class="register__group" role="group">
             <label class="register__field">
               <span class="register__lable">Ім'я</span>
-              <input class="register__input"  type="text" name="Ім'я">
+              <input class="register__input" type="text" name="Ім'я" />
               <svg class="register__icons" width="18" height="18">
-                <use href="./images/icons.svg#person" ></use>
+                <use href="./images/icons.svg#person"></use>
               </svg>
             </label>
-              <label class="register__field"> 
+            <label class="register__field">
               <span class="register-form-lable">Телефон</span>
-              <input class="register__input" type="tel" name="Телефон">
+              <input class="register__input" type="tel" name="Телефон" />
               <svg class="register__icons" width="18" height="18">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </label>
-              <label class="register__field">
+            <label class="register__field">
               <span class="register__lable">Пошта</span>
-              <input class="register__input" type="email" name="Пошта">
+              <input class="register__input" type="email" name="Пошта" />
               <svg class="register__icons" width="18" height="18">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </label>
             <label class="register__field">
               <span class="register__lable">Коментар</span>
-              <textarea class="register__message" 
-              name="Коментар"
-               rows="5"
-               placeholder="Введіть текст"></textarea>
+              <textarea
+                class="register__message"
+                name="Коментар"
+                rows="5"
+                placeholder="Введіть текст"
+              ></textarea>
             </label>
-
           </div>
-          
+
           <label class="register__agreement">
-            <input class="register__checkbox visually-hidden " type="checkbox" name="Погоджуюся з розсилкою та приймаю Умови договору" id="">
+            <input
+              class="register__checkbox visually-hidden"
+              type="checkbox"
+              name="Погоджуюся з розсилкою та приймаю Умови договору"
+              id=""
+            />
             <svg class="register__icons-checkbox" width="16" height="15">
-                <use class="register__icon-cheked" href="./images/icons.svg#checked" ></use>
-                <use class="register__icon-uncheked" href="./images/icons.svg#unchecked" ></use>
-              </svg>
-            <span class="register__desc">Погоджуюся з розсилкою та приймаю 
-              <a class="register__link" href="">Умови договору</a></span>
+              <use class="register__icon-cheked" href="./images/icons.svg#checked"></use>
+              <use class="register__icon-uncheked" href="./images/icons.svg#unchecked"></use>
+            </svg>
+            <span class="register__desc"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="register__link" href="">Умови договору</a></span
+            >
           </label>
 
           <button class="register__btn" type="submit">Відправити</button>

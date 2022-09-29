@@ -1,17 +1,16 @@
 .work {
-    padding-top: 0;
+  padding-top: 0;
 
-
-    &__list {
+  &__list {
     gap: 30px;
     padding-bottom: 0;
-}
+  }
 
-    &__tomb {
+  &__tomb {
     position: relative;
-}
+  }
 
-    &__overlay {
+  &__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -21,18 +20,17 @@
     display: flex;
     justify-content: center;
     align-items: left;
-    /* backdrop-filter: blur;*/
     background-color: rgba(47, 48, 58, 0.8);
     padding-top: 27px;
     padding-bottom: 27px;
-}
+  }
 
-    &__text {
+  &__text {
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     color: var(--backgraund-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
+  }
 }
