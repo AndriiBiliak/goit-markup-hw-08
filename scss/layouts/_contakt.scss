@@ -1,0 +1,57 @@
+
+.contakt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    gap: 50px;
+
+    &__link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: var(--secondary-text-color);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16 / 14);
+            letter-spacing: 0.02em;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            transition: color var(--animation);
+        }
+
+    &__link:hover,
+    &__link:focus {
+    color: var(--accent-color);
+}
+
+    &__address-icons {
+    fill: currentColor;
+}
+
+    &__tel-icons {
+    fill: currentColor;
+}
+
+    &__address-icons:hover,
+    &__address-icons:focus {
+    fill: var(--accent-color);
+}
+
+    &__tel-icons:hover,
+    &__tel-icons:focus {
+    fill: var(--accent-color);
+}
+
+    &__tel-icons {
+    justify-content: center;
+    align-items: center;
+}
+
+    &__tel {
+    gap: 10px;
+}
+
+}
+

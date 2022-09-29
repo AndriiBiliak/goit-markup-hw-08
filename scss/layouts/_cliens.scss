@@ -1,0 +1,31 @@
+.cliens {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-basis: calc((100% - 30px) / 6);
+    cursor: pointer;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    fill: var(--icons-color);
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    transition: color var(--animation), background-color var(--animation);
+  }
+
+  &__icons {
+    transition: fill var(--animation);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

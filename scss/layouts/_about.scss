@@ -1,0 +1,43 @@
+.about {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    width: calc((100% - 90px) / 4);
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
+}

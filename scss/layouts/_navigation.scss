@@ -1,0 +1,66 @@
+.navigation {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 56px;
+  }
+  &__btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 22px;
+    transition: color var(--animation), background var(--animation), box-shadow var(--animation);
+  }
+  &__btn-all {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: 0;
+    padding: 6px 22px;
+    transition: color var(--animation), background var(--animation), box-shadow var(--animation);
+  }
+
+  &__btn-all:hover,
+  &__btn-all:focus {
+    color: var(--secondary-color);
+    background: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: var(--accent-color);
+    color: var(--backgraund-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

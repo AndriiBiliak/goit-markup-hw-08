@@ -1,0 +1,28 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+
+    &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--backgraund-color);
+    border-radius: 50%;
+    fill: var(--icons-color);
+    transition: color var(--animation), background-color var(--animation);
+    }
+
+    &__icons {
+    transition: fill var(--animation), background-color var(--animation);
+    }
+
+    &__link:hover,
+    &__link:focus {
+    background-color: var(--accent-color);
+    fill: var(--backgraund-color);
+    }
+}
