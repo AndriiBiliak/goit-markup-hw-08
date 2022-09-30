@@ -1,17 +1,21 @@
 .cont {
-    display: flex;
-    margin-top: 20px;
-    margin-right: 70px;
+  display: flex;
+  margin-top: 20px;
+  //margin-right: 70px;
+  margin-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
-    &__list {
+  &__list {
     display: list-item;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
-}
+  }
 
-    &__logo {
+  &__logo {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -19,35 +23,35 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--backgraund-color);
-}
+  }
 
-    &__item {
+  &__item {
     margin-bottom: 9px;
-}
+  }
 
-    &__item:last-child {
+  &__item:last-child {
     margin-bottom: 0;
-}
+  }
 
-    &__link {
+  &__link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--animation);
-}
+  }
 
-    &__link:hover,
-    &__link:focus {
+  &__link:hover,
+  &__link:focus {
     color: var(--accent-color);
-}
+  }
 
-    &__link-address {
+  &__link-address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     cursor: default;
-}
+  }
 }

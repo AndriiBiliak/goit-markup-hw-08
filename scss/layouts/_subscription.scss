@@ -1,28 +1,40 @@
 .subscription {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-
-    &__title {
+  &__title {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
-}
+  }
 
-    &__group {
+  &__group {
     display: flex;
     position: relative;
     align-items: center;
-}
+    flex-direction: column;
 
-    &__field {
-    margin-right: 12px;
-}
+    display: flex;
+    position: relative;
+    align-items: center;
 
-    &__input {
-    width: 358px;
+    @media screen and (min-width: 1200px) {
+      flex-direction: unset;
+    }
+  }
+
+  &__field {
+    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+
+  &__input {
+    width: 450px;
     height: 50px;
     padding-left: 16px;
 
@@ -33,9 +45,13 @@
     border-radius: 4px;
     background-color: var(--backgraund-secondary-color);
     color: var(--backgraund-color);
-}
 
-    &__btn {
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+  }
+
+  &__btn {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -57,15 +73,21 @@
     padding: 10px 32px;
     color: var(--backgraund-color);
     /*cursor: pointer;*/
-}
+  }
 
-    &__btn:hover,
-    &__btn:focus {
+  &__btn:hover,
+  &__btn:focus {
     cursor: pointer;
-}
+  }
 
-    &__icons {
+  &__icons {
     position: absolute;
-    right: 34px;
-}
+    right: 148px; // 34px
+    bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      right: 18px;
+      bottom: 11px;
+    }
+  }
 }
