@@ -19,7 +19,7 @@
 
   <body>
     <!-- Шапка -->
-    <!--<header class="header">
+    <header class="header">
       <div class="container container-header">
         <nav class="nav">
           <a class="nav__logo" href="./index.html"><span class="accent">Web</span>Studio</a>
@@ -52,7 +52,12 @@
             >
           </li>
           <li class="contakt__item">
-            <a class="contakt__link" href="tel:+380961111111" target="_blank" rel="noreferrer noopener">
+            <a
+              class="contakt__link"
+              href="tel:+380961111111"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <svg class="contakt__tel-icons" width="10" height="16">
                 <use href="./images/icons.svg#tel"></use>
               </svg>
@@ -61,15 +66,26 @@
           </li>
         </ul>
       </div>
-    </header>-->
+
+      <button
+        class="menu-btn js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
+    </header>
 
     <main class="main">
-      <!--<section class="hero section">
+      <!-- <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__btns" type="button" data-modal-open >Замовити послугу</button>
+          <button class="hero__btns" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section>-->
+      </section> -->
 
       <!-- Блок про нас -->
 
@@ -502,7 +518,7 @@
 
     <!-- Footer-->
 
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container foot-wrap">
         <div class="contact">
         <a class="contact__logo" href="./index.html"><span class="accent">Web</span>Studio</a>
@@ -595,7 +611,7 @@
           
         </div>
       </div>
-    </footer> 
+    </footer> -->
 
     <!--model-->
 
@@ -664,6 +680,101 @@
         </form>
       </div>
     </div>
+
+    <!--modal telephon-->
+    <div class="menu-container js-menu-container is-open" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-close" width="40" height="40">
+          <use class="menu-icon" href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="menu-nav">
+        <li class="menu-nav__item">
+          <a class="menu-nav__link active" href="./index.html">Студія</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="menu-nav__item">
+          <a class="menu-nav__link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="menu-cont">
+        <li class="menu-cont__item">
+          <a
+            class="menu-cont__link"
+            href="tel:+380961111111"
+            target="_blank"
+            rel="noreferrer noopener"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="menu-cont__item">
+          <a
+            class="menu-cont__link"
+            href="mailto:info@devstudio.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="menu-socials">
+        <li class="menu-socials__item">
+          <a
+            class="menu-socials__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Instagram"
+            >Instagram</a
+          >
+        </li>
+        <li class="menu-socials__item">
+          <a
+            class="menu-socials__link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Twitter"
+            >Twitter</a
+          >
+        </li>
+        <li class="menu-socials__item">
+          <a
+            class="menu-socials__link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Facebook"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu-socials__item">
+          <a
+            class="menu-socials__link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Linkedin"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+
+    <!--scr-mobile -menu-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

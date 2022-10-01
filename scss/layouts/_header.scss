@@ -1,14 +1,13 @@
 header {
-    border-bottom: 1px solid #ececec;
+  display: flex;
+  border-bottom: 1px solid #ececec;
 }
 
-
 .container-header {
-    display: flex;
-    align-items: center;
+  align-items: center;
 }
 
 .active {
-    position: relative;
-    color: var(--accent-color);
+  position: relative;
+  color: var(--accent-color);
 }
