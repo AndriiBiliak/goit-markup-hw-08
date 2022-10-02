@@ -85,12 +85,12 @@
     line-height: calc(28 / 24);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+  }
 
-    &__link:focus,
-    &__link:hover {
-      color: var(--accent-color);
-      cursor: pointer;
-    }
+  &__link:focus,
+  &__link:hover {
+    color: var(--accent-color);
+    cursor: pointer;
   }
 }
 
@@ -112,6 +112,6 @@
   }
 
   &__link:last-child {
-    padding-bottom: 0;
+    padding-right: 0;
   }
 }

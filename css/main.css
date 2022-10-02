@@ -114,7 +114,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 753px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -237,7 +237,7 @@ a {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
-.menu-cont__link__link:focus, .menu-cont__link__link:hover {
+.menu-cont__link:focus, .menu-cont__link:hover {
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -257,7 +257,7 @@ a {
   color: var(--accent-color);
 }
 .menu-socials__link:last-child {
-  padding-bottom: 0;
+  padding-right: 0;
 }
 
 .backdrop {
@@ -419,10 +419,12 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.container-header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .active {
@@ -430,14 +432,6 @@ header {
   color: var(--accent-color);
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
 .nav__logo {
   font-family: "Raleway";
   font-style: normal;
@@ -445,10 +439,28 @@ header {
   font-size: 26px;
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
-  margin-right: 248px;
 }
 .nav__list {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__logo {
+    margin-right: 87px;
+  }
+  .nav__list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 50px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav {
@@ -489,6 +501,27 @@ header {
 
 .contakt {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .contakt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    gap: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 51px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contakt {

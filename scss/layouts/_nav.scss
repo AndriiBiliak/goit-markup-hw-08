@@ -1,6 +1,6 @@
 .nav {
-  display: flex;
-  justify-content: flex-start;
+  //display: flex;
+  // justify-content: flex-start;
 
   &__logo {
     font-family: 'Raleway';
@@ -10,10 +10,25 @@
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     //margin-right: 93px;
-    margin-right: 248px;
+    //margin-right: 248px;
   }
   &__list {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    &__logo {
+      margin-right: 87px;
+    }
+
+    &__list {
+      display: inline-flex;
+      gap: 50px;
+      // margin-right: 96px;
+    }
   }
 
   @media screen and (min-width: 1200px) {

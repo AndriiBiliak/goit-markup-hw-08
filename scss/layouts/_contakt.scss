@@ -1,5 +1,18 @@
 .contakt {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    gap: 10px;
+
+    justify-content: flex-start;
+    padding-left: 51px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;

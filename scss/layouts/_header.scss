@@ -4,7 +4,11 @@ header {
 }
 
 .container-header {
-  align-items: center;
+  //align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .active {
