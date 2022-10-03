@@ -1,45 +1,45 @@
 .hero {
+  @media screen and (min-width: 768px) {
     max-width: 1600px;
     text-align: center;
     padding: 200px 0;
     background-color: #2f303a;
     background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
-        url(../images/main/Img.jpg);
+      url(../images/main/Img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
 
-
     &__title {
-    width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(61 / 44);
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--backgraund-color);
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-}
-    &__btns {
-    width: 216px;
-    min-height: 50px;
-
-    letter-spacing: 0.06em;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: 0;
-    padding: 10px 32px;
-    color: var(--backgraund-color);
-
-
-    &__:hover,
-    &__:focus {
-        cursor: pointer;
+      width: 696px;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: calc(61 / 44);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--backgraund-color);
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 30px;
     }
-}
+    &__btns {
+      width: 216px;
+      min-height: 50px;
+
+      letter-spacing: 0.06em;
+      background: var(--accent-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      border: 0;
+      padding: 10px 32px;
+      color: var(--backgraund-color);
+
+      &__:hover,
+      &__:focus {
+        cursor: pointer;
+      }
+    }
+  }
 }

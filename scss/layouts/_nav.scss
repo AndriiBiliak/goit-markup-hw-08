@@ -27,17 +27,7 @@
     &__list {
       display: inline-flex;
       gap: 50px;
-      // margin-right: 96px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-
-    &__list {
-      display: inline-flex;
-      gap: 50px;
+      // margin-right: 96px
     }
 
     &__link {
@@ -62,4 +52,7 @@
       background-color: var(--accent-color);
     }
   }
+}
+
+@media screen and (min-width: 1200px) {
 }

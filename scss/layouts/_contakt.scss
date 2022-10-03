@@ -11,14 +11,6 @@
 
     justify-content: flex-start;
     padding-left: 51px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    gap: 50px;
 
     &__link {
       display: flex;
@@ -30,8 +22,8 @@
       font-size: 14px;
       line-height: calc(16 / 14);
       letter-spacing: 0.02em;
-      padding-top: 32px;
-      padding-bottom: 32px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       transition: color var(--animation);
     }
 
@@ -62,6 +54,16 @@
       justify-content: center;
       align-items: center;
     }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     &__tel {
       gap: 10px;
