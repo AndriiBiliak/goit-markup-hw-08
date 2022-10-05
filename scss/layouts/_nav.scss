@@ -52,7 +52,13 @@
       background-color: var(--accent-color);
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    &__logo {
+      margin-right: 93px;
+    }
+    &__list {
+      margin-right: 300px;
+    }
+  }
 }

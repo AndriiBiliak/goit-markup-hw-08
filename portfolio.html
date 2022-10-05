@@ -19,7 +19,7 @@
   <body>
     <!-- Шапка -->
 
-  <header class="header">
+   <header class="header">
       <div class="container container-header">
         <nav class="nav">
           <a class="nav__logo" href="./index.html"><span class="accent">Web</span>Studio</a>
@@ -52,7 +52,12 @@
             >
           </li>
           <li class="contakt__item">
-            <a class="contakt__link" href="tel:+380961111111" target="_blank" rel="noreferrer noopener">
+            <a
+              class="contakt__link"
+              href="tel:+380961111111"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <svg class="contakt__tel-icons" width="10" height="16">
                 <use href="./images/icons.svg#tel"></use>
               </svg>
@@ -61,6 +66,17 @@
           </li>
         </ul>
       </div>
+
+      <button
+        class="menu-btn js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu"></use>
+        </svg>
+      </button>
     </header>
 
     <!--Основа-->
@@ -92,13 +108,40 @@
           <ul class="card">
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-1.jpg"
-                alt="на екрані фото трьох людей"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                 <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img9_lg-@1x.jpg 1x, ./images/portfolio/img9_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img9_md-@1x.jpg 1x, ./images/portfolio/img9_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img9_sm-@1x.jpg 1x, ./images/portfolio/img9_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img9_sm-@1x.jpg"
+                  alt="на екрані фото трьох людей"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+            
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -110,13 +153,41 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-2.jpg"
-                alt="два баскедболіста борються за мяч"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                  <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img8_lg-@1x.jpg 1x, ./images/portfolio/img8_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img8_md-@1x.jpg 1x, ./images/portfolio/img8_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img8_sm-@1x.jpg 1x, ./images/portfolio/img8_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img8_sm-@1x.jpg"
+                  alt="два баскедболіста борються за мяч" 
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
+   
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -128,13 +199,40 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-3.jpg"
-                alt="логоти ресорану з робою"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                      <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img7_lg-@1x.jpg 1x, ./images/portfolio/img7_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img7_md-@1x.jpg 1x, ./images/portfolio/img7_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img7_sm-@1x.jpg 1x, ./images/portfolio/img7_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img7_sm-@1x.jpg"
+                  alt="логоти ресорану з робою" 
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -146,13 +244,40 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-4.jpg"
-                alt="наушники"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img6_lg-@1x.jpg 1x, ./images/portfolio/img6_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img6_md-@1x.jpg 1x, ./images/portfolio/img6_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img6_sm-@1x.jpg 1x, ./images/portfolio/img6_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img6_sm-@1x.jpg"
+                  alt="наушники" 
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -164,13 +289,40 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-5.jpg"
-                alt="дві коробки"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                        <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img5_lg-@1x.jpg 1x, ./images/portfolio/img5_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img5_md-@1x.jpg 1x, ./images/portfolio/img5_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img5_sm-@1x.jpg 1x, ./images/portfolio/img5_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img5_sm-@1x.jpg"
+                  alt="дві коробки" 
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -182,13 +334,41 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-6.jpg"
-                alt="на екрані зображена карта світу"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                  <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img4_lg-@1x.jpg 1x, ./images/portfolio/img4_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img4_md-@1x.jpg 1x, ./images/portfolio/img4_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img4_sm-@1x.jpg 1x, ./images/portfolio/img4_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img4_sm-@1x.jpg"
+                  alt="на екрані зображена карта світу" 
+                   width="370"
+                  height="294"
+                />
+              </picture>
+
+            
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -200,13 +380,41 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-7.jpg"
-                alt="розгорнута книга"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img3_lg-@1x.jpg 1x, ./images/portfolio/img3_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img3_md-@1x.jpg 1x, ./images/portfolio/img3_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img3_sm-@1x.jpg 1x, ./images/portfolio/img3_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img3_sm-@1x.jpg"
+                  alt="розгорнута книга" 
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
+
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -218,13 +426,40 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-8.jpg"
-                alt="бірка з логотипом"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img2_lg-@1x.jpg 1x, ./images/portfolio/img2_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img2_md-@1x.jpg 1x, ./images/portfolio/img2_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img2_sm-@1x.jpg 1x, ./images/portfolio/img2_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img2_sm-@1x.jpg"
+                  alt="бірка з логотипом" 
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -236,13 +471,40 @@
             </li>
             <li class="card__item">
               <div class="card__tomb">
-              <img
-                src="./images/portfolio/img-9.jpg"
-                alt="набирає на клавіатурі ноутбука"
-                class="card__img"
-                width="370"
-                height="294"
-              />
+                <picture>
+                <!-- Desktop screen -->
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./images/portfolio/img1_lg-@1x.jpg 1x, ./images/portfolio/img1_lg-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Tablet screen -->
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/portfolio/img1_md-@1x.jpg 1x, ./images/portfolio/img1_md-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <!-- Mobile screen -->
+
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/portfolio/img1_sm-@1x.jpg 1x, ./images/portfolio/img1_sm-@2x.jpg 2x"
+                  type="image/jpg"
+                />
+
+                <img
+                  class="card__img"
+                  src="./images/portfolio/img1_sm-@1x.jpg"
+                  alt="набирає на клавіатурі ноутбука" 
+                 width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="card__overlay">
                 <p class="card__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
@@ -352,6 +614,15 @@
         </div>
       </div>
     </footer>
+
+    <!--scr-mobile -menu-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
   </body>
 </html>

@@ -60,10 +60,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
     margin-left: auto;
-    gap: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    gap: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 0;
 
     &__tel {
       gap: 10px;
