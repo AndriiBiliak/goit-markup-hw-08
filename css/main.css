@@ -638,6 +638,7 @@ header {
   border-radius: 4px;
   border: 0;
   padding: 10px 24px;
+  cursor: pointer;
 }
 .hero__btns__:hover, .hero__btns__:focus {
   cursor: pointer;
