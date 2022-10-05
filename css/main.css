@@ -959,6 +959,9 @@ footer {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -973,9 +976,6 @@ footer {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     text-align: unset;
-    -webkit-box-align: unset;
-        -ms-flex-align: unset;
-            align-items: unset;
   }
 }
 
