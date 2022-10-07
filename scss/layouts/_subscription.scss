@@ -19,22 +19,14 @@
     display: flex;
     position: relative;
     align-items: center;
-
-    @media screen and (min-width: 1200px) {
-      flex-direction: unset;
-    }
   }
 
   &__field {
     margin-bottom: 20px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
-      margin-right: 12px;
-    }
   }
 
   &__input {
-    width: 450px;
+    width: 100%; //450
     height: 50px;
     padding-left: 16px;
 
@@ -45,10 +37,6 @@
     border-radius: 4px;
     background-color: var(--backgraund-secondary-color);
     color: var(--backgraund-color);
-
-    @media screen and (min-width: 1200px) {
-      width: 358px;
-    }
   }
 
   &__btn {
@@ -82,12 +70,38 @@
 
   &__icons {
     position: absolute;
-    right: 148px; // 34px
+    right: 22px; //
     bottom: 12px;
+  }
 
-    @media screen and (min-width: 1200px) {
-      right: 18px;
-      bottom: 11px;
+  @media screen and (min-width: 480px) {
+    &__icons {
+      right: 148px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__input {
+      width: 450px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 18px;
+    bottom: 11px;
+
+    &__group {
+      flex-direction: unset;
+    }
+    &__field {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+    &__input {
+      width: 358px;
+    }
+    &__icons {
+      right: 22px;
     }
   }
 }

@@ -6,15 +6,6 @@
     gap: 30px;
     flex-basis: calc((100% - 30px) / 2);
     cursor: pointer;
-
-    @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 3);
-    }
-
-    @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
-      flex-basis: calc((100% - 30px) / 6);
-    }
   }
 
   &__link {
@@ -37,5 +28,18 @@
   &__link:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      flex-basis: calc((100% - 30px) / 3);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__list {
+      flex-wrap: nowrap;
+      flex-basis: calc((100% - 30px) / 6);
+    }
   }
 }
