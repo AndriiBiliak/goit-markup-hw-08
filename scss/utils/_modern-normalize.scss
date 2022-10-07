@@ -93,12 +93,12 @@ select {
   text-transform: none;
 }
 
-[type='button'],
-[type='reset'],
-[type='submit'],
-button {
-  -webkit-appearance: button;
-}
+//[type='button'],
+//[type='reset'],
+//[type='submit'],
+//button {
+//-webkit-appearance: button;
+//}
 
 ::-moz-focus-inner {
   border-style: none;
@@ -127,16 +127,16 @@ progress {
 }
 
 [type='search'] {
-  -webkit-appearance: textfield;
+  // -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+//::-webkit-search-decoration {
+//-webkit-appearance: none;
+//}
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
+  // -webkit-appearance: button;
   font: inherit;
 }
 
