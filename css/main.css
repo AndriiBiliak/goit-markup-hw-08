@@ -280,7 +280,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 40px;
-  height: 40px;
+  height: 54px;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -760,13 +760,13 @@ header {
   max-width: 100%;
   text-align: center;
   padding: 200px 0;
-  background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url(../images/hero/img_sm-@1x.jpg);
-  background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url(../images/hero/img_sm-@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+  background-color: #2f303a;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url(../images/hero/img_sm-@1x.jpg);
+  background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url(../images/hero/img_sm-@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -774,26 +774,26 @@ header {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_sm-@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .hero {
     text-align: center;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url(../images/hero/img_md-@1x.jpg);
     background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url(../images/hero/img_md-@1x.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_md-@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md-@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(48, 48, 58, 0.4)), to(rgba(48, 48, 58, 0.4))), url(../images/hero/img_lg-@1x.jpg);
     background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)), url(../images/hero/img_lg-@1x.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_lg-@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_lg-@2x.jpg);
@@ -1048,9 +1048,28 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .cliens__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 6);
+        flex-basis: calc((100% - 30px) / 6);
+  }
+}
+.cliens__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .cliens__item {
+    width: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cliens__item {
+    width: calc((100% - 30px) / 6);
+  }
 }
 .cliens__link {
   display: -webkit-box;
@@ -1062,13 +1081,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   fill: var(--icons-color);
   border: 1px solid var(--icons-color);
   border-radius: 4px;
   -webkit-transition: color var(--animation), background-color var(--animation);
   transition: color var(--animation), background-color var(--animation);
+}
+@media screen and (min-width: 480px) {
+  .cliens__link {
+    width: 170px;
+  }
 }
 .cliens__icons {
   -webkit-transition: fill var(--animation);
@@ -1077,20 +1101,6 @@ header {
 .cliens__link:hover, .cliens__link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-}
-@media screen and (min-width: 768px) {
-  .cliens__list {
-    -ms-flex-preferred-size: calc((100% - 30px) / 3);
-        flex-basis: calc((100% - 30px) / 3);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cliens__list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-preferred-size: calc((100% - 30px) / 6);
-        flex-basis: calc((100% - 30px) / 6);
-  }
 }
 
 footer {
@@ -1209,13 +1219,29 @@ footer {
 }
 
 .subscription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .subscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    width: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription {
+    right: 18px;
+    bottom: 11px;
+  }
 }
 .subscription__title {
   font-size: 14px;
@@ -1225,28 +1251,48 @@ footer {
   margin-bottom: 20px;
 }
 .subscription__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: flex;
   position: relative;
   align-items: center;
+  margin-top: 20px;
+}
+@media screen and (min-width: 480px) {
+  .subscription__group {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription__group {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+  }
 }
 .subscription__field {
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__field {
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 .subscription__input {
   width: 100%;
   height: 50px;
   padding-left: 16px;
+  margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1255,6 +1301,17 @@ footer {
   border-radius: 4px;
   background-color: var(--backgraund-secondary-color);
   color: var(--backgraund-color);
+}
+@media screen and (min-width: 480px) {
+  .subscription__input {
+    width: 450px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscription__input {
+    width: 358px;
+  }
 }
 .subscription__btn {
   display: -webkit-box;
@@ -1288,7 +1345,7 @@ footer {
 }
 .subscription__icons {
   position: absolute;
-  right: 22px;
+  right: 20%;
   bottom: 12px;
 }
 @media screen and (min-width: 480px) {
@@ -1297,28 +1354,11 @@ footer {
   }
 }
 @media screen and (min-width: 768px) {
-  .subscription__input {
-    width: 450px;
+  .subscription__icons {
+    right: 102px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .subscription {
-    right: 18px;
-    bottom: 11px;
-  }
-  .subscription__group {
-    -webkit-box-orient: unset;
-    -webkit-box-direction: unset;
-        -ms-flex-direction: unset;
-            flex-direction: unset;
-  }
-  .subscription__field {
-    margin-bottom: 0;
-    margin-right: 12px;
-  }
-  .subscription__input {
-    width: 358px;
-  }
   .subscription__icons {
     right: 22px;
   }

@@ -1,6 +1,19 @@
 .subscription {
-  display: flex;
+  width: 100%;
   flex-direction: column;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    right: 18px;
+    bottom: 11px;
+  }
 
   &__title {
     font-size: 14px;
@@ -11,24 +24,38 @@
   }
 
   &__group {
-    display: flex;
-    position: relative;
     align-items: center;
-    flex-direction: column;
 
-    display: flex;
     position: relative;
     align-items: center;
+    margin-top: 20px;
+
+    @media screen and (min-width: 480px) {
+      position: relative;
+      flex-direction: column;
+      display: flex;
+      margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: unset;
+    }
   }
 
   &__field {
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
   }
 
   &__input {
     width: 100%; //450
     height: 50px;
     padding-left: 16px;
+    margin-bottom: 20px;
 
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -37,6 +64,18 @@
     border-radius: 4px;
     background-color: var(--backgraund-secondary-color);
     color: var(--backgraund-color);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      margin-bottom: 0;
+    }
+    // @media screen and (min-width: 768px) {
+    // &__input {
+    //  }
+    //}
+    @media screen and (min-width: 768px) {
+      width: 358px;
+    }
   }
 
   &__btn {
@@ -70,37 +109,16 @@
 
   &__icons {
     position: absolute;
-    right: 22px; //
+    right: 20%; //
     bottom: 12px;
-  }
 
-  @media screen and (min-width: 480px) {
-    &__icons {
+    @media screen and (min-width: 480px) {
       right: 148px;
     }
-  }
-
-  @media screen and (min-width: 768px) {
-    &__input {
-      width: 450px;
+    @media screen and (min-width: 768px) {
+      right: 102px;
     }
-  }
-
-  @media screen and (min-width: 1200px) {
-    right: 18px;
-    bottom: 11px;
-
-    &__group {
-      flex-direction: unset;
-    }
-    &__field {
-      margin-bottom: 0;
-      margin-right: 12px;
-    }
-    &__input {
-      width: 358px;
-    }
-    &__icons {
+    @media screen and (min-width: 1200px) {
       right: 22px;
     }
   }

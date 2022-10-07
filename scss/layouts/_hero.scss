@@ -3,21 +3,21 @@
   text-align: center;
   padding: 200px 0;
 
-  background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
-    url(../images/hero/img_sm-@1x.jpg);
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+
+  background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
+    url(../images/hero/img_sm-@1x.jpg);
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/hero/img_sm-@2x.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 481px) {
     text-align: center;
 
     background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
@@ -29,7 +29,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 769px) {
     background-image: linear-gradient(to right, rgba(48, 48, 58, 0.4), rgba(48, 48, 58, 0.4)),
       url(../images/hero/img_lg-@1x.jpg);
 
