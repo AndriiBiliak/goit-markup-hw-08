@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
-      flex-basis: calc((100% - 30px) / 6);
+      //flex-basis: calc((100% - 30px) / 6 );
     }
   }
 
@@ -17,7 +17,7 @@
     width: calc((100% - 30px) / 2);
 
     @media screen and (min-width: 768px) {
-      width: calc((100% - 30px) / 3);
+      width: calc((100% - 60px) / 3);
     }
 
     @media screen and (min-width: 1200px) {
@@ -36,9 +36,9 @@
     border-radius: 4px;
     transition: color var(--animation), background-color var(--animation);
 
-    @media screen and (min-width: 480px) {
-      width: 170px;
-    }
+    // @media screen and (min-width: 480px) {
+    // width: 170px;
+    //}
   }
 
   &__icons {

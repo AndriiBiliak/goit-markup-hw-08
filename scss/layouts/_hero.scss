@@ -39,6 +39,10 @@
     }
   }
 
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
+
   &__title {
     font-weight: 900;
     font-size: 20px;
@@ -60,11 +64,9 @@
     }
 
     @media screen and (min-width: 1200px) {
-      &__title {
-        width: 696px;
-        font-size: 44px;
-        line-height: calc(61 / 44);
-      }
+      width: 696px;
+      font-size: 44px;
+      line-height: calc(61 / 44);
     }
   }
 
